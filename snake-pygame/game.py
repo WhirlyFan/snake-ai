@@ -30,7 +30,7 @@ BLUE2 = (0, 100, 255)
 BLACK = (0,0,0)
 
 BLOCK_SIZE = 20
-SPEED = 20
+SPEED = 40 # default is 20 frames per second
 
 class SnakeGameAI:
 
@@ -75,7 +75,7 @@ class SnakeGameAI:
 
 
         # 2. move
-        self._move(self.action) # update the head
+        self._move(action) # update the head
         self.snake.insert(0, self.head)
 
         # 3. check if game over
