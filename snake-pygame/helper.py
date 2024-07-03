@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use("TkAgg") # using XLaunch and tkinter in WSL2
+
 import matplotlib.pyplot as plt
 from IPython import display
 
